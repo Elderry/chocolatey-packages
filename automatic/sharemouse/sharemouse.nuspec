@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package 
+    xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+    <metadata>
+        <id>sharemouse</id>
+        <version>3.0.51</version>
+        <packageSourceUrl>https://github.com/Elderry/chocolatey-packages/tree/master/manual/sharemouse</packageSourceUrl>
+        <owners>Ruiyang Li</owners>
+        <title>ShareMouse</title>
+        <authors>Tonec Inc.</authors>
+        <projectUrl>http://www.keyboard-and-mouse-sharing.com/</projectUrl>
+        <iconUrl>https://cdn.rawgit.com/Elderry/chocolatey-packages/master/icons/sharemouse.png</iconUrl>
+        <copyright>© 2011-2016 Bartels Media GmbH</copyright>
+        <licenseUrl>http://www.keyboard-and-mouse-sharing.com/freeware.htm</licenseUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <tags>trial mouse share admin</tags>
+        <summary>ShareMouse lets you share your mouse and keyboard with multiple networked computers.</summary>
+        <description>ShareMouse allows you to control any Mac or Windows PC with the mouse/keyboard of any other computer. To control a specific computer, move the mouse into the direction of the corresponding display. Once the mouse pointer reaches the border of a monitor, it jumps to the neighboring monitor and Sharemouse steps in to control the remote computer.</description>
+        <releaseNotes>
+            Date: 08/27/2016
+            Version: 3.0.51
+            Changes: 
+            - Improved dimming if using a screen saver.
+            - Improved fallback if connections fails.
+            - Offline licenses can now be released.
+        </releaseNotes>
+    </metadata>
+</package>

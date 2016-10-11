@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package 
+    xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+    <metadata>
+        <id>internet-download-manager</id>
+        <version>6.26.2</version>
+        <packageSourceUrl>http://mirror2.internetdownloadmanager.com/idman626build2.exe</packageSourceUrl>
+        <owners>Ruiyang Li</owners>
+        <title>Internet Download Manager</title>
+        <authors>Tonec Inc.</authors>
+        <projectUrl>http://www.internetdownloadmanager.com/</projectUrl>
+        <iconUrl>https://cdn.rawgit.com/Elderry/chocolatey-packages/master/Internet%20Download%20Manager/icon.png</iconUrl>
+        <copyright>© 1999-2016. Tonec Inc. All rights reserved.</copyright>
+        <licenseUrl>https://cdn.rawgit.com/Elderry/chocolatey-packages/master/Internet%20Download%20Manager/license.txt</licenseUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <projectSourceUrl>https://github.com/Elderry/chocolatey-packages/tree/master/Internet%20Download%20Manager/</projectSourceUrl>
+        <tags>trial download admin</tags>
+        <summary>A shareware download manager</summary>
+        <description>Internet Download Manager (IDM) is a tool to increase download speeds by up to 5 times, resume and schedule downloads. Comprehensive error recovery and resume capability will restart broken or interrupted downloads due to lost connections, network problems, computer shutdowns, or unexpected power outages. Simple graphic user interface makes IDM user friendly and easy to use.Internet Download Manager has a smart download logic accelerator that features intelligent dynamic file segmentation and safe multipart downloading technology to accelerate your downloads. Unlike other download managers and accelerators Internet Download Manager segments downloaded files dynamically during download process and reuses available connections without additional connect and login stages to achieve best acceleration performance.</description>
+        <releaseNotes>
+            (Released: Sep 09, 2016)
+            - Fixed problem with video recognition for several video types.
+        </releaseNotes>
+        <dependencies>
+            <dependency id="autohotkey.portable" version="[1.1.24.01,)"/>
+        </dependencies>
+    </metadata>
+</package>
