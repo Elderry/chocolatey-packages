@@ -1,39 +1,37 @@
-# AU Packages Template: https://github.com/majkinetor/au-packages-template
-
 param($Name = $null)
 
 if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
 
 $Options = [ordered]@{
-    Timeout    = 100                                        #Connection timeout in seconds
-    Threads    = 10                                         #Number of background jobs to use
-    Push       = $Env:au_Push -eq 'true'                    #Push to chocolatey
-    PluginPath = ''                                         #Path to user plugins
+    Timeout    = 100
+    Threads    = 10
+    Push       = $Env:au_Push -eq 'true'
+    PluginPath = ''
 
     Report = @{
-        Type = 'markdown'                                   #Report type: markdown or text
-        Path = "$PSScriptRoot\Update-AUPacakges.md"         #Path where to save the report
-        Params= @{                                          #Report parameters:
-            Github_UserRepo = $Env:github_user_repo          #  Markdown: shows user info in upper right corner
-            NoAppVeyor  = $false                            #  Markdown: do not show AppVeyor build shield
-            UserMessage = ''                                #  Markdown, Text: Custom user message to show
+        Type = 'markdown'
+        Path = "$PSScriptRoot\Update-AUPacakges.md"
+        Params= @{
+            Github_UserRepo = $Env:github_user_repo
+            NoAppVeyor  = $false
+            UserMessage = ''
         }
     }
 
     Gist = @{
-        Id          = $Env:gist_id                          #Your gist id or leave empty for anonymous
-        ApiKey      = $Env:github_api_key                   #Your github api key
-        Path        = "$PSScriptRoot\Update-AUPacakges.md"  #List of files to add to gist
+        Id          = $Env:gist_id
+        ApiKey      = $Env:github_api_key
+        Path        = "$PSScriptRoot\Update-AUPacakges.md"
     }
 
-    #Git = @{
-        #User     = ''                                       #Git username, leave empty if github api key is used
-        #Password = $Env:github_api_key                      #Password if username is not empty, otherwise api key
-    #}
+    Git = @{
+        User     = 'Elderry'
+        Password = $Env:github_api_key
+    }
 
     RunInfo = @{
-        Exclude = 'password', 'apikey'                      #Option keys which contain those words will be removed
-        Path    = "$PSScriptRoot\update_info.xml"           #Path where to save the run info
+        Exclude = 'password', 'apikey'
+        Path    = "$PSScriptRoot\update_info.xml"
     }
 
     Mail = if ($Env:mail_user) {
@@ -46,13 +44,10 @@ $Options = [ordered]@{
                 EnableSsl   = $Env:enable_ssl -eq 'true'
                 Attachments = "$PSScriptRoot\update_info.xml"
                 UserMessage = ''
-                SendAlways  = $false                        #Send notifications every time
+                SendAlways  = $false
              }
            } else {}
 }
 
-$global:au_Root = "$PSScriptRoot/../automatic"                           #Path to the AU packages
-$info = updateall -Name $Name -Options $Options
-
-#Uncomment to fail the build on AppVeyor on any package error
-#if ($info.error_count.total) { throw 'Errors during update' }
+$global:au_Root = "$PSScriptRoot/../automatic"
+$info = Update-AUPackages -Name $Name -Options $Options

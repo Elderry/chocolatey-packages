@@ -14,7 +14,7 @@
         <tags>trial download manager admin</tags>
         <summary>A shareware download manager. It is only available for the Microsoft Windows operating system.</summary>
         <description>Internet Download Manager (IDM) is a tool to increase download speeds by up to 5 times, resume and schedule downloads. Comprehensive error recovery and resume capability will restart broken or interrupted downloads due to lost connections, network problems, computer shutdowns, or unexpected power outages. Simple graphic user interface makes IDM user friendly and easy to use.Internet Download Manager has a smart download logic accelerator that features intelligent dynamic file segmentation and safe multipart downloading technology to accelerate your downloads. Unlike other download managers and accelerators Internet Download Manager segments downloaded files dynamically during download process and reuses available connections without additional connect and login stages to achieve best acceleration performance.</description>
-        <releaseNotes>http://www.internetdownloadmanager.com/news.html</releaseNotes
+        <releaseNotes>http://www.internetdownloadmanager.com/news.html</releaseNotes>
         <dependencies>
             <dependency id="autohotkey.portable" version="[1.1.24.02,)" />
         </dependencies>
