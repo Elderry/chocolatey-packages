@@ -1,16 +1,13 @@
-﻿$ErrorActionPreference = 'Stop';
-
-$packageName = 'sharemouse'
-$url         = 'http://www.keyboard-and-mouse-sharing.com/ShareMouseSetup.exe'
+﻿$ErrorActionPreference = 'Stop'
 
 $packageArgs = @{
-    packageName    = $packageName
+    packageName    = 'sharemouse'
     fileType       = 'EXE'
-    url            = $url
+    url            = 'http://www.keyboard-and-mouse-sharing.com/ShareMouseSetup.exe'
     softwareName   = 'ShareMouse'
-    checksum       = 'a97258f2b1b7863bdb2d591967734df3'
+    checksum       = '5e05b95222028e87aa3001614047ec77'
     checksumType   = 'md5'
-    silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
+    silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
     validExitCodes = @(0)
 }
 

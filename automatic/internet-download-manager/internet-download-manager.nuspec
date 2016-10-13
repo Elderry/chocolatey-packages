@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
     <metadata>
         <id>internet-download-manager</id>
-        <version>6.26.7</version>
+        <version>6.26.6</version>
         <title>Internet Download Manager</title>
         <authors>Tonec Inc.</authors>
         <projectUrl>http://www.internetdownloadmanager.com/</projectUrl>
@@ -10,6 +10,7 @@
         <copyright>© 1999-2016. Tonec Inc. All rights reserved.</copyright>
         <licenseUrl>http://www.internetdownloadmanager.com/buy_idm.html</licenseUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <packageSourceUrl>https://github.com/Elderry/chocolatey-packages/tree/master/automatic/internet-download-manager</packageSourceUrl>
         <owners>Ruiyang Li</owners>
         <tags>trial download manager admin</tags>
         <summary>A shareware download manager. It is only available for the Microsoft Windows operating system.</summary>
