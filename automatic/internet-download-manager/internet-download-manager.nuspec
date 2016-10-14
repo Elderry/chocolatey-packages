@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
     <metadata>
         <id>internet-download-manager</id>
-        <version>6.26.6</version>
+        <version>6.26.7</version>
         <title>Internet Download Manager</title>
         <authors>Tonec Inc.</authors>
         <projectUrl>http://www.internetdownloadmanager.com/</projectUrl>
