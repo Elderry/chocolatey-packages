@@ -19,6 +19,5 @@ WinWait, %winTitleStart%
 ControlClick, &Next, %winTitleStart%
 
 winTitleComplete = Installation Complete
-winTitleCompleteText = Internet Download Manager has been successfully installed.
-WinWait, %winTitleComplete%, %winTitleCompleteText%
+WinWait, %winTitleComplete%
 ControlClick, &Finish, %winTitleComplete%

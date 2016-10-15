@@ -1,6 +1,6 @@
 param($Name = $null)
 
-if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
+. $PSScriptRoot/update_vars.ps1
 
 $Options = [ordered]@{
     Timeout    = 100
@@ -25,7 +25,7 @@ $Options = [ordered]@{
     }
 
     Git = @{
-        User     = 'Elderry'
+        User     = ''
         Password = $Env:github_api_key
     }
 

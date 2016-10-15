@@ -1,3 +1,5 @@
 *.nupkg
 .vscode
 update_vars.ps1
+update_info.xml
+Update-AUPacakges.md
