@@ -1,20 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
     <metadata>
+        <!-- == PACKAGE SPECIFIC SECTION == -->
         <id>sharemouse</id>
         <version>3.0.52</version>
         <packageSourceUrl>https://github.com/Elderry/chocolatey-packages/tree/master/automatic/sharemouse</packageSourceUrl>
         <owners>Ruiyang Li</owners>
+
+        <!-- == SOFTWARE SPECIFIC SECTION == -->
         <title>ShareMouse</title>
-        <authors>Tonec Inc.</authors>
+        <authors>Bartels Media GmbH</authors>
         <projectUrl>http://www.keyboard-and-mouse-sharing.com/</projectUrl>
         <iconUrl>https://cdn.rawgit.com/Elderry/chocolatey-packages/master/icons/sharemouse.png</iconUrl>
         <copyright>© 2011-2016 Bartels Media GmbH</copyright>
         <licenseUrl>http://www.keyboard-and-mouse-sharing.com/freeware.htm</licenseUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <docsUrl>http://www.keyboard-and-mouse-sharing.com/docs3/09/manual.php</docsUrl>
+        <mailingListUrl>http://www.keyboard-and-mouse-sharing.com/contact.php</mailingListUrl>
+        <bugTrackerUrl>http://www.keyboard-and-mouse-sharing.com/contact.php</bugTrackerUrl>
         <tags>trial mouse share admin</tags>
         <summary>ShareMouse lets you share your mouse and keyboard with multiple networked computers.</summary>
         <description>ShareMouse allows you to control any Mac or Windows PC with the mouse/keyboard of any other computer. To control a specific computer, move the mouse into the direction of the corresponding display. Once the mouse pointer reaches the border of a monitor, it jumps to the neighboring monitor and Sharemouse steps in to control the remote computer.</description>
         <releaseNotes>http://www.keyboard-and-mouse-sharing.com/docs3/09/changelog.php</releaseNotes>
     </metadata>
+    <files>
+        <file src="tools/*" target="tools" />
+    </files>
 </package>
