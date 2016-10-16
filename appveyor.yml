@@ -5,36 +5,26 @@ clone_depth: 5
 branches:
   only:
   - master
-#build:
-#  verbosity: minimal
 
 environment:
-  # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
   au_version:
   au_push: true
 
-  # Github token to commit pushed packages to repository
-  github_user_repo: {github_user}/{repository}
+  github_user_repo: Elderry/chocolatey-packages
   github_api_key:
-    secure: YOUR_GITHUB_API_KEY_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: fkLx9hbl6VRx9yna3ZDFKJ6hQxYmVMnRz6BqQF04x+4kOMhMFLWgYPvwRw+Ozq7n
 
-
-  # Mail credentials - for error notifications
-  mail_user:
-    secure: YOUR_EMAIL_ACCOUNT_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+  mail_user: Elderry@outlook.com
   mail_pass:
-    secure: YOUR_EMAIL_PASSWORD_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
-  mail_server: smtp.gmail.com
+    secure: FNu3qrZ7Vp3deBbbDToJv3uAyqftcGCA34AO2B8XWVc=
+  mail_server: smtp-mail.outlook.com
   mail_port: 587
   mail_enablessl: true
 
-  # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
-  # Optional, leave empty to create anonymous gist
-  gist_id:
+  gist_id: 687b1756f34c3b9f913dfb64ed3e2ca4
 
-  # Chocolatey API key - to push updated packages
   api_key:
-    secure: YOUR_CHOCO_API_KEY_HERE_ENCRYPTED_STRING # https://ci.appveyor.com/tools/encrypt
+    secure: 267aa8d1-3e6e-45a8-be9d-9e4e6113a579
 
 init:
 - git config --global user.email "chocolatey@realdimensions.net"
@@ -69,9 +59,6 @@ build_script:
 - ps: |
     ./au/update_all.ps1
 
-#on_finish:
-#- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
-
 artifacts:
 - path: au/update_info.xml
 - path: au/Update-AUPackages.md
@@ -82,4 +69,3 @@ notifications:
   on_build_success: false
   on_build_failure: true
   on_build_status_changed: true
-

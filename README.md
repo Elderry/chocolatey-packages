@@ -49,4 +49,4 @@ Here are some packages I'm maintaing for [chocolatey.org](https://chocolatey.org
     </tr>
 </table>
 
-If you have any problems, feel free to contact: Elderry@outlook.com.
+Any problems, feel free to contact: Elderry@outlook.com.
