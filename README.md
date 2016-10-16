@@ -47,6 +47,25 @@ Here are some packages I'm maintaing for [chocolatey.org](https://chocolatey.org
             </p>
         </td>
     </tr>
+    <tr>
+        <td>
+            <a href="http://mnemosyne-proj.org/">
+                <img src="https://cdn.rawgit.com/Elderry/chocolatey-packages/master/icons/mnemosyne.png" width="48" />
+            </a>
+        </td>
+        <td>
+            <a href="http://mnemosyne-proj.org/">Mnemosyne</a>
+            <p>A free flash-card tool which optimizes your learning process.</p>
+            <p>
+                <a href="https://chocolatey.org/packages/mnemosyne">
+                    <img src="http://img.shields.io/chocolatey/dt/mnemosyne.svg" />
+                </a>
+                <a href="https://chocolatey.org/packages/mnemosyne">
+                    <img src="http://img.shields.io/chocolatey/v/mnemosyne.svg" />
+                </a>
+            </p>
+        </td>
+    </tr>
 </table>
 
 Any problems, feel free to contact: Elderry@outlook.com.

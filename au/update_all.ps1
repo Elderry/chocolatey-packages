@@ -1,6 +1,6 @@
 param($Name = $null)
 
-. $PSScriptRoot/update_vars.ps1
+if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
 
 $Options = [ordered]@{
     Timeout    = 100

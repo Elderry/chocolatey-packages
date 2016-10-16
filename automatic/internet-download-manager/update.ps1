@@ -1,6 +1,6 @@
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'http://internetdownloadmanager.com/download.html'
-    $fullUrl = $download_page.links |
+    $fullUrl = $download_page.Links |
                Where-Object href -Match '.exe$' |
                Select-Object -First 1 -ExpandProperty href
     $url = $fullUrl -split '\?' | Select-Object -First 1
@@ -9,8 +9,8 @@ function global:au_GetLatest {
                Replace('build', '.').
                Insert(1, '.')
     return @{
-        Version = $version;
-        URL32 = $url;
+        Version = $version
+        URL32 = $url
         ChecksumType32 = 'MD5'
     }
 }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+    <metadata>
+        <!-- == PACKAGE SPECIFIC SECTION == -->
+        <id>mnemosyne</id>
+        <version>2.3.6</version>
+        <packageSourceUrl>https://github.com/Elderry/chocolatey-packages/tree/master/automatic/mnemosyne</packageSourceUrl>
+        <owners>Ruiyang Li</owners>
+
+        <!-- == SOFTWARE SPECIFIC SECTION == -->
+        <title>Mnemosyne</title>
+        <authors>Peter Bienstman</authors>
+        <projectUrl>http://mnemosyne-proj.org/</projectUrl>
+        <iconUrl>https://cdn.rawgit.com/Elderry/chocolatey-packages/master/icons/mnemosyne.png</iconUrl>
+        <copyright>© 1999-2016. Tonec Inc. All rights reserved.</copyright>
+        <licenseUrl>https://www.gnu.org/licenses/gpl.html</licenseUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <projectSourceUrl>https://launchpad.net/mnemosyne-proj</projectSourceUrl>
+        <docsUrl>http://mnemosyne-proj.org/help/index.php</docsUrl>
+        <mailingListUrl>https://groups.google.com/forum/?fromgroups#!forum/mnemosyne-proj-users</mailingListUrl>
+        <bugTrackerUrl>https://groups.google.com/forum/?fromgroups#!forum/mnemosyne-proj-users</bugTrackerUrl>
+        <tags>flash card memory admin</tags>
+        <summary>A free flash-card tool which optimizes your learning process.</summary>
+        <description>The Mnemosyne software resembles a traditional flash-card program to help you memorise question/answer pairs, but with an important twist: it uses a sophisticated algorithm to schedule the best time for a card to come up for review. Difficult cards that you tend to forget quickly will be scheduled more often, while Mnemosyne won't waste your time on things you remember well.</description>
+        <releaseNotes>http://mnemosyne-proj.org/whats-new</releaseNotes>
+    </metadata>
+    <files>
+        <file src="tools\**" target="tools" />
+    </files>
+</package>

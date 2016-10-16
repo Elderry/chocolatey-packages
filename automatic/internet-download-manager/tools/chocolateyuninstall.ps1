@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $softwareName   = 'Internet Download Manager'
-$regKey         = Get-ItemProperty -Path "HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\$softwareName"
-$uninstallFile  = $regKey.UninstallString.Replace('"', '')
-$installerType  = $uninstallFile.Split(".")[-1]
+$regEntry       = Get-ItemProperty -Path "HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\$softwareName"
+$uninstallFile  = $regEntry.UninstallString -Replace '"'
+$installerType  = $uninstallFile -Split '\.' | Select-Object -Last 1
 $silentArgs     = ''
 $validExitCodes = 0
 

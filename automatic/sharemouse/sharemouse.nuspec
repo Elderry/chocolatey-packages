@@ -24,6 +24,6 @@
         <releaseNotes>http://www.keyboard-and-mouse-sharing.com/docs3/09/changelog.php</releaseNotes>
     </metadata>
     <files>
-        <file src="tools/*" target="tools" />
+        <file src="tools\**" target="tools" />
     </files>
 </package>

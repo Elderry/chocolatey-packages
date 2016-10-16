@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$softwareName   = 'ShareMouse'
+$softwareName   = 'Mnemosyne'
 $regEntry       = Get-ItemProperty -Path "HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\$softwareName*"
 $uninstallFile  = $regEntry.UninstallString -Replace '"'
 $installerType  = $uninstallFile -Split '\.' | Select-Object -Last 1
