@@ -1,6 +1,6 @@
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'http://mnemosyne-proj.org/download-mnemosyne.php'
-    $download_page.Content -match '\d+\.\d+\.\d+' | Out-Null
+    $download_page.Content -Match '\d+\.\d+\.\d+' | Out-Null
     $version = $Matches[0]
     $url = $download_page.Links |
            Where-Object innerHTML -Match 'Windows' |

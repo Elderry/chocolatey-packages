@@ -66,6 +66,25 @@ Here are some packages I'm maintaing for [chocolatey.org](https://chocolatey.org
             </p>
         </td>
     </tr>
+    <tr>
+        <td>
+            <a href="https://www.expressvpn.com/">
+                <img src="https://cdn.rawgit.com/Elderry/chocolatey-packages/master/icons/expressvpn.png" width="48" />
+            </a>
+        </td>
+        <td>
+            <a href="https://www.expressvpn.com/">Express VPN</a>
+            <p>The fastest VPN on earth</p>
+            <p>
+                <a href="https://chocolatey.org/packages/expressvpn">
+                    <img src="http://img.shields.io/chocolatey/dt/expressvpn.svg" />
+                </a>
+                <a href="https://chocolatey.org/packages/expressvpn">
+                    <img src="http://img.shields.io/chocolatey/v/expressvpn.svg" />
+                </a>
+            </p>
+        </td>
+    </tr>
 </table>
 
 Any problems, feel free to contact: Elderry@outlook.com.

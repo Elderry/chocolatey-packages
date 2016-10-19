@@ -3,8 +3,8 @@ function global:au_GetLatest {
     $fullUrl = $download_page.Links |
                Where-Object href -Match '.exe$' |
                Select-Object -First 1 -ExpandProperty href
-    $url = $fullUrl -split '\?' | Select-Object -First 1
-    $version = ($url -split 'idman' | Select-Object -Last 1).
+    $url = $fullUrl -Split '\?' | Select-Object -First 1
+    $version = ($url -Split 'idman' | Select-Object -Last 1).
                Replace('.exe', '').
                Replace('build', '.').
                Insert(1, '.')

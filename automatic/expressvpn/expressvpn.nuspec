@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+    <metadata>
+        <!-- == PACKAGE SPECIFIC SECTION == -->
+        <id>expressvpn</id>
+        <version>5.3.0</version>
+        <packageSourceUrl>https://github.com/Elderry/chocolatey-packages/tree/master/automatic/expressvpn</packageSourceUrl>
+        <owners>Ruiyang Li</owners>
+
+        <!-- == SOFTWARE SPECIFIC SECTION == -->
+        <title>Express VPN</title>
+        <authors>ExpressVPN</authors>
+        <projectUrl>https://www.expressvpn.com/</projectUrl>
+        <iconUrl>https://cdn.rawgit.com/Elderry/chocolatey-packages/master/icons/expressvpn.png</iconUrl>
+        <copyright>© 2016 ExpressVPN. All rights reserved.</copyright>
+        <licenseUrl>https://www.expressvpn.com/order</licenseUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <docsUrl>https://www.expressvpn.com/support/vpn-setup/</docsUrl>
+        <mailingListUrl>https://www.expressvpn.com/support/</mailingListUrl>
+        <bugTrackerUrl>https://www.expressvpn.com/support/troubleshooting/</bugTrackerUrl>
+        <tags>trial vpn service client admin</tags>
+        <summary>The fastest VPN on earth.</summary>
+        <description>High speed, ultra secure, and easy to use. Instant setup.
+### Easy-to-use VPN service for Windows, Mac, iOS, Android, Routers, and Linux
+Setup is easy, whether you’re using a computer, tablet, or smartphone. Our user-friendly apps let you secure your connection and unblock websites in one click. Just sign up, install, and connect.
+### Ultra secure and ultra fast
+Our network is SSL secured with 256-bit encryption, and we’re constantly optimizing our network to provide unlimited bandwidth and speed, so you can stream your favorite movies and TV shows in high definition. ExpressVPN runs seamlessly in the background so you can use the internet without interruptions.
+### 5-star customer support
+Our world-class support team is at your service. We offer round-the-clock customer support by live chat and email. Get instant help from a knowledgeable support agent when you use our live chat feature.
+### 136+ VPN locations… and counting!
+You can choose from 136 cities in 87 countries. With unlimited speeds and unlimited server switches, you can connect from anywhere in the world.
+### 30-day money-back guarantee
+We're confident that you'll be happy with our product and services. We also want you to be confident in your purchase, which is why we have a hassle-free 30-day money-back guarantee.</description>
+        <releaseNotes>https://www.expressvpn.com/support/release-notes/windows/</releaseNotes>
+    </metadata>
+    <files>
+        <file src="tools\**" target="tools" />
+    </files>
+</package>
