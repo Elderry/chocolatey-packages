@@ -25,6 +25,9 @@ environment:
 
   api_key:
     secure: 267aa8d1-3e6e-45a8-be9d-9e4e6113a579
+    
+  expressvpn_license_key:
+    secure: BQH2A9VaqoFX0jCi+rldcEtMKtn2M2KnFjaa4FuTpZ8lHozO/r4nxz3r9ywBfXWv
 
 init:
 - git config --global user.email "chocolatey@realdimensions.net"
