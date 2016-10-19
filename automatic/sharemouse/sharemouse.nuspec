@@ -3,7 +3,7 @@
     <metadata>
         <!-- == PACKAGE SPECIFIC SECTION == -->
         <id>sharemouse</id>
-        <version>3.0.52</version>
+        <version>3.0.56</version>
         <packageSourceUrl>https://github.com/Elderry/chocolatey-packages/tree/master/automatic/sharemouse</packageSourceUrl>
         <owners>Ruiyang Li</owners>
 
