@@ -74,7 +74,7 @@ Here are some packages I'm maintaing for [chocolatey.org](https://chocolatey.org
         </td>
         <td>
             <a href="https://www.expressvpn.com/">Express VPN</a>
-            <p>The fastest VPN on earth</p>
+            <p>The fastest VPN on earth.</p>
             <p>
                 <a href="https://chocolatey.org/packages/expressvpn">
                     <img src="http://img.shields.io/chocolatey/dt/expressvpn.svg" />
