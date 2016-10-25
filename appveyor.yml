@@ -7,7 +7,7 @@ branches:
   - master
 
 environment:
-  au_version: master
+  au_version:
   au_push: true
 
   github_user_repo: Elderry/chocolatey-packages
@@ -25,7 +25,7 @@ environment:
 
   api_key:
     secure: fTeSg7EQm2LFh61r3CrIR9S6oOpdavnKrTDRw7SBUHPdJr+r7MY/hxnAW/jMsae+
-    
+
   expressvpn_license_key:
     secure: BQH2A9VaqoFX0jCi+rldcEtMKtn2M2KnFjaa4FuTpZ8lHozO/r4nxz3r9ywBfXWv
 
