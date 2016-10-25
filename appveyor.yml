@@ -7,7 +7,7 @@ branches:
   - master
 
 environment:
-  au_version:
+  au_version: master
   au_push: true
 
   github_user_repo: Elderry/chocolatey-packages
