@@ -2,11 +2,10 @@
     $download_page = Invoke-WebRequest -Uri ('https://www.expressvpn.com/licenses/' + $Env:expressvpn_license_key)
     $url = $download_page.Links |
            Where-Object innerHTML -eq 'Download' |
-           Where-Object onclick -Match 'Windows 7, 8, 10' |
+           Where-Object onclick -Match 'Download App - Windows' |
            Select-Object -First 1 -ExpandProperty href
-    $release_note_page = Invoke-WebRequest -Uri 'https://www.expressvpn.com/support/release-notes/windows/'
-    $release_note_page.Content -Match 'version\s\d+\.\d+\.\d+' | Out-Null
-    $version = $Matches[0] -Split ' ' | Select-Object -Last 1
+    $version = $url -Replace '.exe' -Split 'expressvpn_' |
+               Select-Object -Last 1
     return @{
         Version = $version
         URL32 = $url
