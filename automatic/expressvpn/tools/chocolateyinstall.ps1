@@ -1,11 +1,11 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 
 $packageArgs = @{
     packageName    = 'expressvpn'
     fileType       = 'EXE'
-    url            = 'https://download.expressvpn.xyz/clients/windows/expressvpn_5.2.0.632.exe'
+    url            = 'https://download.expressvpn.xyz/clients/windows/expressvpn_6.0.1.920.exe'
     softwareName   = 'Express VPN'
-    checksum       = '9fb66419cb2fffc5d436123f08da71fd'
+    checksum       = '7bbac5e6aa38e70a39aa2c6cba87b749'
     checksumType   = 'MD5'
     silentArgs     = '/S'
     validExitCodes = @(0)
