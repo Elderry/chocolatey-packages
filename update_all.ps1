@@ -1,23 +1,27 @@
-param($Name = $null)
+param([string] $Name, [string] $ForcedPackages, [string] $Root = "$PSScriptRoot\automatic")
 
 if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
 
 $Options = [ordered]@{
-    Timeout    = 100
-    Threads    = 10
-    Push       = $Env:au_Push -eq $true
-    PluginPath = ''
+    Timeout       = 100
+    UpdateTimeout = 1200
+    Threads       = 10
+    Push          = $Env:au_Push -eq $true
+    PluginPath    = ''
 
     Report = @{
         Type = 'markdown'
         Path = "$PSScriptRoot\Update-AUPacakges.md"
         Params= @{
             Github_UserRepo = $Env:github_user_repo
-            NoAppVeyor  = $false
-            UserMessage = ''
+            NoAppVeyor      = $false
+            UserMessage     = ''
+            NoIcons         = $false
+            IconSize        = 32
+            Title           = ''
         }
     }
-
+    
     Gist = @{
         Id     = $Env:gist_id
         ApiKey = $Env:github_api_key
@@ -45,7 +49,18 @@ $Options = [ordered]@{
         UserMessage = ''
         SendAlways  = $false
     }
+    
+    ForcedPackages = $ForcedPackages -split ' '
+    BeforeEach = {
+        param($PackageName, $Options)
+        $p = $Options.ForcedPackages | Where-Object { $_ -match "^${PackageName}(?:\:(.+))*$" }
+        if (!$p) { return }
+
+        $global:au_Force   = $true
+        $global:au_Version = ($p -split ':')[1]
+    }
 }
 
-$global:au_Root = "$PSScriptRoot/../automatic"
-$info = Update-AUPackages -Name $Name -Options $Options
+if ($ForcedPackages) { Write-Host "FORCED PACKAGES: $ForcedPackages" }
+$global:au_Root = $Root
+$global:info = Update-AUPackages -Name $Name -Options $Options

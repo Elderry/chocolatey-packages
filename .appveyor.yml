@@ -1,0 +1,89 @@
+version: '{build}'
+max_jobs: 1
+image: WMF 5
+branches:
+  only:
+  - master
+
+environment:
+  au_version:
+  au_push: true
+  au_test_groups: 1
+
+  github_user_repo: Elderry/chocolatey-packages
+  github_api_key:
+    secure: fkLx9hbl6VRx9yna3ZDFKJ6hQxYmVMnRz6BqQF04x+4kOMhMFLWgYPvwRw+Ozq7n
+
+  mail_user: Elderry@outlook.com
+  mail_pass:
+    secure: FNu3qrZ7Vp3deBbbDToJv3uAyqftcGCA34AO2B8XWVc=
+  mail_server: smtp-mail.outlook.com
+  mail_port: 587
+  mail_enablessl: true
+
+  gist_id: 687b1756f34c3b9f913dfb64ed3e2ca4
+
+  api_key:
+    secure: fTeSg7EQm2LFh61r3CrIR9S6oOpdavnKrTDRw7SBUHPdJr+r7MY/hxnAW/jMsae+
+
+  expressvpn_license_key:
+    secure: BQH2A9VaqoFX0jCi+rldcEtMKtn2M2KnFjaa4FuTpZ8lHozO/r4nxz3r9ywBfXWv
+
+init:
+- git config --global user.email "chocolatey@realdimensions.net"
+- git config --global user.name "Chocolatey"
+- git config --global core.safecrlf false
+
+install:
+- ps: 'Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
+- ps: $PSVersionTable
+- git --version
+- ps: |
+    git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
+    . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
+
+- ps: |
+    "Build info"
+    '  {0,-20} {1}' -f 'SCHEDULED BUILD:', ($Env:APPVEYOR_SCHEDULED_BUILD -eq 'true')
+    '  {0,-20} {1}' -f 'FORCED BUILD:'   , ($Env:APPVEYOR_FORCED_BUILD    -eq 'true')
+    '  {0,-20} {1}' -f 'RE BUILD:'       , ($Env:APPVEYOR_RE_BUILD        -eq 'true')
+
+build_script:
+- ps: |
+    $ErrorActionPreference = 'Continue'
+
+    if ($Env:APPVEYOR_PROJECT_NAME  -like '*test*') { ./test_all.ps1 "random $Env:au_test_groups"; return }
+
+    if ( ($Env:APPVEYOR_SCHEDULED_BUILD -ne 'true') -and ($Env:APPVEYOR_FORCED_BUILD -ne 'true') ) {
+        switch -regex ($Env:APPVEYOR_REPO_COMMIT_MESSAGE)
+        {
+            '\[AU (.+?)\]'   { $forced = $Matches[1] }
+
+            '\[PUSH (.+?)\]' {
+                $packages = $Matches[1] -split ' '
+                Write-Host "PUSHING PACKAGES: $packages"
+                foreach ($package in $packages) {
+                    Write-Host ("{0}`n{1}`n" -f ('-'*60), "PACKAGE: $package")
+                    $package_dir = ls -recurse | ? { $_.Name -eq "$package.nuspec"} | select -First 1 | % Directory
+                    if (!$package_dir) { Write-Warning "Can't find package '$package'"; continue }
+                    pushd $package_dir; choco pack; Push-Package; popd
+                }
+                return
+            }
+        }
+    }
+
+    ./update_all.ps1 -ForcedPackages $forced
+    7z a au_temp.zip $Env:TEMP\chocolatey\au\*
+
+artifacts:
+- path: update_info.xml
+- path: Update-AUPackages.md
+- path: au_temp.zip
+
+notifications:
+- provider: Email
+  to: $(mail_user)
+  on_build_success: false
+  on_build_failure: true
+  on_build_status_changed: true
