@@ -12,8 +12,7 @@ $packageArgs = @{
 }
 
 $scriptPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-$ahkExe     = 'AutoHotKey'
 $ahkFile    = Join-Path $scriptPath 'idmInstall.ahk'
-Start-Process -FilePath $ahkExe -ArgumentList $ahkFile
+AutoHotkey.exe $ahkFile
 
 Install-ChocolateyPackage @packageArgs
