@@ -1,4 +1,4 @@
-function global:au_GetLatest {
+﻿function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'http://mnemosyne-proj.org/download-mnemosyne.php'
     $url = $download_page.Links |
            Where-Object innerHTML -Match 'Windows' |
@@ -21,4 +21,4 @@ function global:au_SearchReplace {
     }
 }
 
-Update-Package -NoCheckChocoVersion -ChecksumFor '32'
+Update-Package -ChecksumFor '32'

@@ -1,4 +1,4 @@
-function global:au_GetLatest {
+﻿function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'http://internetdownloadmanager.com/download.html'
     $fullUrl = $download_page.Links |
                Where-Object href -Match '.exe$' |
@@ -24,4 +24,4 @@ function global:au_SearchReplace {
     }
 }
 
-Update-Package -NoCheckChocoVersion -ChecksumFor '32'
+Update-Package -ChecksumFor '32'

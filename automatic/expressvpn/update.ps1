@@ -23,4 +23,4 @@ function global:au_SearchReplace {
 }
 
 if (!$Env:expressvpn_license_key) { . $PSScriptRoot/../../au/update_vars.ps1 }
-Update-Package -NoCheckChocoVersion -ChecksumFor '32'
+Update-Package -ChecksumFor '32'

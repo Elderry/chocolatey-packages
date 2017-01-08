@@ -1,4 +1,4 @@
-#Name can be 'random N' to randomly force the Nth group of packages.
+﻿#Name can be 'random N' to randomly force the Nth group of packages.
 
 param( [string[]] $Name, [string] $Root = "$PSScriptRoot" )
 
