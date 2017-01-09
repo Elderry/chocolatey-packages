@@ -1,5 +1,6 @@
 #NoEnv
 #NoTrayIcon
+SetControlDelay, -1
 
 winTitleInstall = Internet Download Manager Installation Wizard
 WinWait, %winTitleInstall%

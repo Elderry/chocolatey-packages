@@ -1,4 +1,4 @@
-$refreshenv = Get-Command refreshenv -ea SilentlyContinue
+﻿$refreshenv = Get-Command refreshenv -ea SilentlyContinue
 if ($refreshenv -ne $null -and $refreshenv.CommandType -ne 'Application') {
     refreshenv
 } else {
@@ -8,4 +8,4 @@ if ($refreshenv -ne $null -and $refreshenv.CommandType -ne 'Application') {
 Install-PackageProvider -Name NuGet -Force
 Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 Install-Module au -Scope AllUsers
-Get-Module au -ListAvailable | select Name, Version
+Get-Module au -ListAvailable | Select-Object Name, Version
