@@ -1,7 +1,7 @@
 ﻿function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'http://internetdownloadmanager.com/download.html'
     $fullUrl = $download_page.Links |
-               Where-Object href -Match '.exe$' |
+               Where-Object href -Match '\.exe$' |
                Select-Object -First 1 -ExpandProperty href
     $url = $fullUrl -Split '\?' | Select-Object -First 1
     $version = ($url -Split 'idman' | Select-Object -Last 1).
