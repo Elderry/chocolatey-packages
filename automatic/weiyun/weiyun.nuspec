@@ -11,12 +11,12 @@
         <title>Weiyun (Install)</title>
         <authors>Tencent Inc.</authors>
         <projectUrl>https://www.weiyun.com/</projectUrl>
-        <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/weiyun.png</iconUrl>
+        <iconUrl>https://cdn.rawgit.com/Elderry/chocolatey-packages/b03c09fd/icons/weiyun.png</iconUrl>
         <copyright>Copyright © 1998 - 2017 Tencent. All Rights Reserved.</copyright>
         <licenseUrl>https://www.weiyun.com/vip/weiyun_vip.html</licenseUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
         <tags>weiyun admin netdisk client</tags>
-        <summary>Weiyun is a cloud storage service provided by Tencent. You can use Weiyun to easily sync files, pictures and data between cell phone and PCs.
+        <summary>Weiyun is a cloud storage service provided by Tencent(only in Chinese). You can use Weiyun to easily sync files, pictures and data between cell phone and PCs.
 微云是腾讯公司为用户精心打造的一项智能云服务，您可以通过微云方便地在手机和电脑之间，同步文件、推送照片和传输数据。</summary>
     </metadata>
     <files>
