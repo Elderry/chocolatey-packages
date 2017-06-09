@@ -3,7 +3,7 @@
     <metadata>
         <!-- == PACKAGE SPECIFIC SECTION == -->
         <id>expressvpn</id>
-        <version>6.1.2.2062</version>
+        <version>6.2.0.2405</version>
         <packageSourceUrl>https://github.com/Elderry/chocolatey-packages/tree/master/automatic/expressvpn</packageSourceUrl>
         <owners>Ruiyang Li</owners>
 
