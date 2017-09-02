@@ -85,26 +85,6 @@ Here are some packages I'm maintaing for [chocolatey.org](https://chocolatey.org
             </p>
         </td>
     </tr>
-    <tr>
-        <td>
-            <a href="https://www.weiyun.com/">
-                <img src="https://cdn.rawgit.com/Elderry/chocolatey-packages/b03c09fd/icons/weiyun.png" width="48" />
-            </a>
-        </td>
-        <td>
-            <a href="https://www.weiyun.com/">Weiyun (微云)</a>
-            <p>A cloud storage service provided by Tencent(only in Chinese).</p>
-            <p>腾讯公司为用户精心打造的一项智能云服务。</p>
-            <p>
-                <a href="https://chocolatey.org/packages/weiyun">
-                    <img src="http://img.shields.io/chocolatey/dt/weiyun.svg" />
-                </a>
-                <a href="https://chocolatey.org/packages/expressvpn">
-                    <img src="http://img.shields.io/chocolatey/v/weiyun.svg" />
-                </a>
-            </p>
-        </td>
-    </tr>
 </table>
 
 Any problems, feel free to contact: Elderry@outlook.com.
