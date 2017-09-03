@@ -27,7 +27,7 @@ environment:
     secure: fTeSg7EQm2LFh61r3CrIR9S6oOpdavnKrTDRw7SBUHPdJr+r7MY/hxnAW/jMsae+
 
   expressvpn_license_key:
-    secure: BQH2A9VaqoFX0jCi+rldcEtMKtn2M2KnFjaa4FuTpZ8lHozO/r4nxz3r9ywBfXWv
+    secure: njRRS/rAgMUN4q1zAT6P0SJGjZr5xhzMr2dt9IhWCQ2S92G3EYL1IWoML125u6nT4QMKDxQOyuqSSIl6ArX6ZBRiVNMII1RXS7kSLxMlN3w=
 
 init:
 - git config --global user.email "chocolatey@realdimensions.net"
