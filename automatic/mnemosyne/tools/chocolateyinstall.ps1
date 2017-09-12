@@ -3,9 +3,9 @@
 $packageArgs = @{
     packageName    = 'mnemosyne'
     fileType       = 'EXE'
-    url            = 'https://sourceforge.net/projects/mnemosyne-proj/files/mnemosyne/mnemosyne-2.4.1/Mnemosyne-2.4.1-setup.exe/download'
+    url            = 'https://sourceforge.net/projects/mnemosyne-proj/files/mnemosyne/mnemosyne-2.5/Mnemosyne-2.5-setup.exe/download'
     softwareName   = 'Mnemosyne'
-    checksum       = 'f8415264395cfa8cb06d6215a96fbef3'
+    checksum       = '82df5f58b12030f1efa637826b8a7693'
     checksumType   = 'MD5'
     silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
     validExitCodes = @(0)
