@@ -3,9 +3,9 @@
 $packageArgs = @{
     packageName    = 'expressvpn'
     fileType       = 'EXE'
-    url            = 'https://download.expressvpn.xyz/clients/windows/expressvpn_6.2.4.2910.exe'
+    url            = 'https://download.expressvpn.xyz/clients/windows/expressvpn_6.2.5.2949.exe'
     softwareName   = 'Express VPN'
-    checksum       = '344d8e58da436673cfe2c0b59370834c'
+    checksum       = '4ddbf589b7ea651156ce700742da8f69'
     checksumType   = 'MD5'
     silentArgs     = '/S'
     validExitCodes = @(0)
