@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
     <metadata>
         <!-- == PACKAGE SPECIFIC SECTION == -->
         <id>expressvpn</id>
         <version>6.6.2.4493</version>
         <packageSourceUrl>https://github.com/Elderry/chocolatey-packages/tree/master/automatic/expressvpn</packageSourceUrl>
-        <owners>Ruiyang Li</owners>
+        <owners>Ruiyang Li, Sanshiro</owners>
 
         <!-- == SOFTWARE SPECIFIC SECTION == -->
         <title>Express VPN</title>
@@ -32,6 +32,9 @@ You can choose from 136 cities in 87 countries. With unlimited speeds and unlimi
 ### 30-day money-back guarantee
 We're confident that you'll be happy with our product and services. We also want you to be confident in your purchase, which is why we have a hassle-free 30-day money-back guarantee.</description>
         <releaseNotes>https://www.expressvpn.com/support/release-notes/windows/</releaseNotes>
+        <dependencies>
+          <dependency id="autohotkey.portable" />
+        </dependencies>
     </metadata>
     <files>
         <file src="tools\**" target="tools" />
