@@ -3,25 +3,28 @@
     <metadata>
         <!-- == PACKAGE SPECIFIC SECTION == -->
         <id>sharemouse</id>
-        <version>4.0.46</version>
+        <version>4.0.48</version>
         <packageSourceUrl>https://github.com/Elderry/chocolatey-packages/tree/master/automatic/sharemouse</packageSourceUrl>
         <owners>Ruiyang Li</owners>
 
         <!-- == SOFTWARE SPECIFIC SECTION == -->
         <title>ShareMouse</title>
         <authors>Bartels Media GmbH</authors>
-        <projectUrl>http://www.keyboard-and-mouse-sharing.com/</projectUrl>
+        <projectUrl>https://www.sharemouse.com/</projectUrl>
         <iconUrl>https://cdn.rawgit.com/Elderry/chocolatey-packages/master/icons/sharemouse.png</iconUrl>
-        <copyright>© 2002-2017 Bartels Media GmbH</copyright>
-        <licenseUrl>http://www.keyboard-and-mouse-sharing.com/freeware.htm</licenseUrl>
+        <copyright>© 2002-2019 Bartels Media GmbH</copyright>
+        <licenseUrl>https://www.bartelsmedia.com/terms/</licenseUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
-        <docsUrl>http://www.keyboard-and-mouse-sharing.com/docs4/09/manual.php</docsUrl>
-        <mailingListUrl>http://www.keyboard-and-mouse-sharing.com/contact.php</mailingListUrl>
-        <bugTrackerUrl>http://www.keyboard-and-mouse-sharing.com/contact.php</bugTrackerUrl>
+        <docsUrl>https://www.sharemouse.com/doc/</docsUrl>
+        <mailingListUrl>https://www.sharemouse.com/support/</mailingListUrl>
+        <bugTrackerUrl>https://www.sharemouse.com/support/</bugTrackerUrl>
         <tags>trial mouse share admin</tags>
-        <summary>ShareMouse lets you share your mouse and keyboard with multiple networked computers.</summary>
-        <description>ShareMouse allows you to control any Mac or Windows PC with the mouse/keyboard of any other computer. To control a specific computer, move the mouse into the direction of the corresponding display. Once the mouse pointer reaches the border of a monitor, it jumps to the neighboring monitor and Sharemouse steps in to control the remote computer.</description>
-        <releaseNotes>http://www.keyboard-and-mouse-sharing.com/docs4/09/changelog.php</releaseNotes>
+        <summary>The software "ShareMouse" lets you control multiple computers from a single mouse and keyboard</summary>
+        <description>Move the mouse to the monitor of the computer you wish to control and the pointer magically jumps to that computer. Any mouse and keyboard input is transmitted to the corresponding computer.
+Similar to a network KVM, ShareMouse transmits mouse movements and clicks through the local LAN. All traffic can be password-protected and AES encrypted.
+To switch between computers, there is no additional hardware or press of a button required.
+Similar to a keyboard switch, you can seamlessly operate multiple computers on your desk from any mouse and keyboard.</description>
+        <releaseNotes>https://www.sharemouse.com/download/changelog/</releaseNotes>
     </metadata>
     <files>
         <file src="tools\**" target="tools" />
