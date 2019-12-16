@@ -11,7 +11,7 @@
         <title>ShareMouse</title>
         <authors>Bartels Media GmbH</authors>
         <projectUrl>https://www.sharemouse.com/</projectUrl>
-        <iconUrl>https://cdn.rawgit.com/Elderry/chocolatey-packages/master/icons/sharemouse.png</iconUrl>
+        <iconUrl>https://rawcdn.githack.com/Elderry/chocolatey-packages/3a126dadde61c6f6aa982809d6e499ed57b91b75/icons/sharemouse.png</iconUrl>
         <copyright>© 2002-2019 Bartels Media GmbH</copyright>
         <licenseUrl>https://www.bartelsmedia.com/terms/</licenseUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -19,7 +19,7 @@
         <mailingListUrl>https://www.sharemouse.com/support/</mailingListUrl>
         <bugTrackerUrl>https://www.sharemouse.com/support/</bugTrackerUrl>
         <tags>trial mouse share admin</tags>
-        <summary>The software "ShareMouse" lets you control multiple computers from a single mouse and keyboard</summary>
+        <summary>The software "ShareMouse" lets you control multiple computers from a single mouse and keyboard.</summary>
         <description>Move the mouse to the monitor of the computer you wish to control and the pointer magically jumps to that computer. Any mouse and keyboard input is transmitted to the corresponding computer.
 Similar to a network KVM, ShareMouse transmits mouse movements and clicks through the local LAN. All traffic can be password-protected and AES encrypted.
 To switch between computers, there is no additional hardware or press of a button required.

@@ -11,7 +11,7 @@
         <title>Mnemosyne</title>
         <authors>Peter Bienstman</authors>
         <projectUrl>http://mnemosyne-proj.org/</projectUrl>
-        <iconUrl>https://cdn.rawgit.com/Elderry/chocolatey-packages/master/icons/mnemosyne.png</iconUrl>
+        <iconUrl>https://rawcdn.githack.com/Elderry/chocolatey-packages/3a126dadde61c6f6aa982809d6e499ed57b91b75/icons/mnemosyne.png</iconUrl>
         <licenseUrl>https://www.gnu.org/licenses/gpl.html</licenseUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
         <projectSourceUrl>https://launchpad.net/mnemosyne-proj</projectSourceUrl>
