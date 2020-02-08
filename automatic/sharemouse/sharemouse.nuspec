@@ -3,7 +3,7 @@
     <metadata>
         <!-- == PACKAGE SPECIFIC SECTION == -->
         <id>sharemouse</id>
-        <version>4.0.48</version>
+        <version>5.0.27</version>
         <packageSourceUrl>https://github.com/Elderry/chocolatey-packages/tree/master/automatic/sharemouse</packageSourceUrl>
         <owners>Ruiyang Li</owners>
 
@@ -12,7 +12,7 @@
         <authors>Bartels Media GmbH</authors>
         <projectUrl>https://www.sharemouse.com/</projectUrl>
         <iconUrl>https://rawcdn.githack.com/Elderry/chocolatey-packages/3a126dadde61c6f6aa982809d6e499ed57b91b75/icons/sharemouse.png</iconUrl>
-        <copyright>© 2002-2019 Bartels Media GmbH</copyright>
+        <copyright>© 2002-2020 Bartels Media GmbH</copyright>
         <licenseUrl>https://www.bartelsmedia.com/terms/</licenseUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
         <docsUrl>https://www.sharemouse.com/doc/</docsUrl>
